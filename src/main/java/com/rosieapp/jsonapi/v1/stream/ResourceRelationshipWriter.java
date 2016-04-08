@@ -357,6 +357,9 @@ extends JsonWriter
         }
     }
 
+    /**
+     * TODO: Convert to unit test.
+     */
     public static void main(String[] args)
     throws IOException
     {

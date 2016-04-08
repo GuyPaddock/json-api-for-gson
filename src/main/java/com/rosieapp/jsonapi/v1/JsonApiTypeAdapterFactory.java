@@ -15,9 +15,10 @@ import java.lang.reflect.Type;
 
 /**
  * Type adapter factory used when serializing {@link Resource} objects into and
- * out of JSON-API-v1-compliant JSON.
+ * out of JSON that complies with JSON API v1.
  *
  * @author Guy Paddock (guy@rosieapp.com)
+ * @see <a href="http://jsonapi.org/format/">JSON API v1 Specification</a>
  */
 public class JsonApiTypeAdapterFactory
 implements TypeAdapterFactory

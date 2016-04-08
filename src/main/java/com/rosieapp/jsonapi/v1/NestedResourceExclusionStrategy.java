@@ -11,13 +11,28 @@ import com.google.gson.FieldAttributes;
 public class NestedResourceExclusionStrategy
 implements ExclusionStrategy
 {
-    public boolean shouldSkipClass(Class<?> clazz)
-    {
-        return false;
-    }
-
+    /**
+     * @inheritDoc
+     *
+     * @return
+     *   {@code true} if the field is a {@link Resource} type; {@code false},
+     *   otherwise.
+     */
+    @Override
     public boolean shouldSkipField(FieldAttributes fieldInfo)
     {
         return Resource.class.isAssignableFrom(fieldInfo.getDeclaredClass());
+    }
+
+    /**
+     * @inheritDoc
+     *
+     * @return
+     *   {@code false}, always.
+     */
+    @Override
+    public boolean shouldSkipClass(Class<?> clazz)
+    {
+        return false;
     }
 }

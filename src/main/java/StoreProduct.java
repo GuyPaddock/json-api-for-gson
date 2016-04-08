@@ -29,9 +29,9 @@ implements Resource
         this.longDescription    = longDescription;
     }
 
-    public int getId()
+    public String getId()
     {
-        return this.id;
+        return Integer.toString(id);
     }
 
     public void setId(int id)

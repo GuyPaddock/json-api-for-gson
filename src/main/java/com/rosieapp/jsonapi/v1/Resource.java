@@ -7,5 +7,11 @@ package com.rosieapp.jsonapi.v1;
  */
 public interface Resource
 {
-   public int getId();
+   /**
+    * Gets the identifier for this object.
+    *
+    * @return
+    *   The identifier for this object.
+    */
+   public String getId();
 }

@@ -21,9 +21,9 @@ implements Resource
         this.retailerId     = retailerId;
     }
 
-    public int getId()
+    public String getId()
     {
-        return id;
+        return Integer.toString(id);
     }
 
     public void setId(int id)
